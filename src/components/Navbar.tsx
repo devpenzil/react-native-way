@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React from "react";
 import ThemeToggle from "./ThemeToggle";
+import { GITHUB_ISSUE_URL } from "@/constants/url";
 
 function Navbar() {
   return (
@@ -12,7 +13,9 @@ function Navbar() {
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
-          <li className="btn btn-ghost ">Add a package 📦</li>
+          <a href={GITHUB_ISSUE_URL}>
+            <li className="btn btn-ghost ">Add a package 📦</li>
+          </a>
           <li>
             <ThemeToggle />
           </li>

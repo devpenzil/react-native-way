@@ -33,7 +33,7 @@ function Categories() {
         return (
           <div className="w-1/3 p-3" key={obj.id}>
             <Link href={`/categories/${obj.category_slug}`}>
-              <div className="border p-4">
+              <div className="border p-4 rounded">
                 <div>{obj?.category_emoji}</div>
                 <div className="text-xl font-semibold">{obj?.display_name}</div>
                 <div className="text-gray-600 text-xs mt-3">
