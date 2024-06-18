@@ -1,17 +1,20 @@
 import Categories from "@/components/Categories";
-import GroupChips from "@/components/GroupChips";
 import Navbar from "@/components/Navbar";
 import Spotlight from "@/components/Spotlight";
-import React from "react";
+import Head from "next/head";
 
 function Home() {
   return (
-    <div>
-      <Navbar />
-      <Spotlight />
-      <GroupChips />
-      <Categories />
-    </div>
+    <>
+      <Head>
+        <title>React Native Way | Home</title>
+      </Head>
+      <div>
+        <Navbar />
+        <Spotlight />
+        <Categories />
+      </div>
+    </>
   );
 }
 
